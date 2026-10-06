@@ -28,6 +28,40 @@ extension ChatStore {
             switch scenario {
             case "v17performance":
                 checks = try await checkUpdateOptimizations()
+            case "v18siri":
+                // Network-search behavior already has its own integration scenario.
+                // Keep this fixture focused on Siri continuation and app isolation.
+                preferences.webSearch = false
+                preferences.essayMode = false
+                let preservedID = currentID, preservedDraft = draft, preservedPreferences = preferences
+                let preservedSiri = siriPreferences
+                defer { siriPreferences = preservedSiri }
+                siriPreferences.responseStyle = .balanced
+                let roundTrip = try JSONDecoder().decode(SiriPreferences.self, from: UserDefaults.standard.data(forKey: "siri.preferences.v1") ?? Data())
+                checks["testSiriNativePreferencesPersist"] = roundTrip == siriPreferences
+                siriPreferences = .init()
+                let marker = "青杉" + String(UUID().uuidString.prefix(8))
+                let talk = TalkToWristChatIntent()
+                talk.question = "换个话题，本次对话的代号是\(marker)。只回复收到。"
+                let first = try await talk.perform()
+                let firstID = UserDefaults.standard.string(forKey: "lastSiriConversationID")
+                checks["testNaturalSiriReturnsDirectDialogInBackground"] = !(first.value ?? "").isEmpty && (first as? IntentResultContainer<String, Never, Never, IntentDialog>)?.dialog != nil && TalkToWristChatIntent.supportedModes == .background && !TalkToWristChatIntent.openAppWhenRun
+                let followup = TalkToWristChatIntent(); followup.question = "只写出刚才的代号，不要解释。"
+                let second = try await followup.perform()
+                checks["testNaturalSiriContinuesWithoutSeparateContinueCommand"] = (second.value ?? "").contains(marker) && UserDefaults.standard.string(forKey: "lastSiriConversationID") == firstID && conversations.first(where: { $0.id.uuidString == firstID })?.messages.count == 4
+                let reset = TalkToWristChatIntent(); reset.question = "换个话题，1加1等于多少？只写数字。"
+                _ = try await reset.perform()
+                let resetID = UserDefaults.standard.string(forKey: "lastSiriConversationID")
+                checks["testNaturalSiriNewTopicKeepsPreviousHistory"] = resetID != firstID && conversations.first(where: { $0.id.uuidString == firstID })?.messages.count == 4 && conversations.first(where: { $0.id.uuidString == resetID })?.messages.count == 2
+                siriPreferences.automaticallyContinues = false
+                let independent = TalkToWristChatIntent(); independent.question = "1加2等于多少？只写数字。"
+                _ = try await independent.perform()
+                let finalID = UserDefaults.standard.string(forKey: "lastSiriConversationID")
+                checks["testNaturalSiriRespectsDisabledAutoContinue"] = finalID != resetID && conversations.first(where: { $0.id.uuidString == finalID })?.messages.count == 2
+                checks["testNaturalSiriPreservesAppDraftSettingsAndSelection"] = currentID == preservedID && draft == preservedDraft && preferences == preservedPreferences && !isGenerating
+                await flushHistory()
+                let disk = try JSONDecoder().decode([Conversation].self, from: Data(contentsOf: URL.applicationSupportDirectory.appendingPathComponent("WristChat/conversations.json")))
+                checks["testNaturalSiriPersistsCompleteHistoryWithoutUIHandoff"] = disk.first(where: { $0.id.uuidString == firstID })?.messages.count == 4 && disk.first(where: { $0.id.uuidString == finalID })?.messages.last?.state == .complete && currentID == preservedID
             case "v15search":
                 setWritingMode(false)
                 newConversation()

@@ -47,6 +47,7 @@ source_build = [add("build:" + p, isa="PBXBuildFile", fileRef=r) for p, r in zip
 resource_paths = [("WatchChat/Assets.xcassets", "folder.assetcatalog"),
                   (".private/BootstrapCredentials.plist", "text.plist.xml"),
                   ("LICENSE", "text"),
+                  ("WatchChat/AppShortcuts.xcstrings", "text.json.xcstrings"),
                   ("WatchChat/PrivacyInfo.xcprivacy", "text.plist.xml")]
 resource_refs = [ref(p, t) for p, t in resource_paths]
 signing_ref = ref(".private/Signing.xcconfig", "text.xcconfig")
@@ -67,7 +68,7 @@ main = add("main", isa="PBXGroup", children=[sources, widget_group, docs, produc
 base = {
     "CLANG_ENABLE_MODULES": "YES", "SWIFT_VERSION": "6.0", "SWIFT_STRICT_CONCURRENCY": "complete",
     "SWIFT_EMIT_LOC_STRINGS": "YES", "CODE_SIGN_STYLE": "Automatic", "GENERATE_INFOPLIST_FILE": "YES",
-    "MARKETING_VERSION": "1.7.1", "CURRENT_PROJECT_VERSION": "11", "ENABLE_USER_SCRIPT_SANDBOXING": "YES",
+    "MARKETING_VERSION": "1.8.1", "CURRENT_PROJECT_VERSION": "13", "ENABLE_USER_SCRIPT_SANDBOXING": "YES",
     "DEVELOPMENT_TEAM": "$(WRISTCHAT_DEVELOPMENT_TEAM)",
 }
 watch_settings = base | {

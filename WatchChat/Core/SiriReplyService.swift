@@ -4,13 +4,14 @@
 import Foundation
 
 public enum SiriReplyError: LocalizedError, Equatable {
-    case emptyQuestion, questionTooLong, noPreviousConversation, busy
+    case emptyQuestion, questionTooLong, noPreviousConversation, busy, unsupportedSearch
     public var errorDescription: String? {
         switch self {
         case .emptyQuestion: "请说出问题或作文题目。"
         case .questionTooLong: "这次问题太长，请控制在4000字以内。"
-        case .noPreviousConversation: "还没有 Siri 对话，请先说“用腕聊提问”。"
+        case .noPreviousConversation: "还没有上一段 Siri 对话。直接说“腕聊帮我”问一个问题即可。"
         case .busy: "Siri 中的上一条问题还在回答，请稍后再问。"
+        case .unsupportedSearch: "当前提供商还不能联网搜索。请在腕聊设置中选择 MiMo 或 DeepSeek。"
         }
     }
 }
@@ -29,9 +30,7 @@ public struct SiriReplyRequest: Sendable {
     public init(question: String, provider: AIProvider, model: String, key: String,
                 searchKey: String = "", preferences: ChatPreferences, thinking: Bool,
                 history: [ChatMessage] = [], essayTarget: Int? = nil) throws {
-        let trimmed = question.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { throw SiriReplyError.emptyQuestion }
-        guard trimmed.count <= 4000 else { throw SiriReplyError.questionTooLong }
+        let trimmed = try SiriQuestionText.validate(question)
         self.question = trimmed; self.provider = provider; self.model = model
         self.key = key; self.searchKey = searchKey; self.preferences = preferences
         self.thinking = thinking && provider.supportsThinking; self.history = history

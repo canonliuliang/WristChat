@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
+    <key>INAlternativeAppNames</key><array><dict>
+        <key>INAlternativeAppName</key><string>AI</string>
+        <key>INAlternativeAppNamePronunciationHint</key><string>A I</string>
+    </dict></array>
     <key>CFBundleLocalizations</key><array><string>zh-Hans</string><string>en</string></array>
     <key>CFBundleURLTypes</key><array><dict>
         <key>CFBundleTypeRole</key><string>Editor</string>

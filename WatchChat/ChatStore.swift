@@ -34,6 +34,12 @@ final class ChatStore: ObservableObject {
             if let data = try? JSONEncoder().encode(preferences) { defaults.set(data, forKey: "preferences.v1") }
         }
     }
+    @Published var siriPreferences: SiriPreferences {
+        didSet {
+            guard siriPreferences != oldValue else { return }
+            if let data = try? JSONEncoder().encode(siriPreferences) { defaults.set(data, forKey: "siri.preferences.v1") }
+        }
+    }
     @Published var draft = "" {
         didSet {
             let key = draftKey(currentID)
@@ -65,28 +71,32 @@ final class ChatStore: ObservableObject {
     func essayDocument(_ message: ChatMessage) -> EssayDocument { essayCache.document(id: message.id, text: message.text) }
 
     func answerSiri(question: String, writing: Bool = false, continuing: Bool = false,
+                    conversationMode: SiriConversationMode = .fresh,
                     progress: @escaping @Sendable (Int) -> Void = { _ in }) async throws -> SiriReply {
         guard !isAnsweringSiri else { throw SiriReplyError.busy }
+        let plan = try SiriConversationPlan(question: question, writing: writing)
         let previousID = defaults.string(forKey: "lastSiriConversationID").flatMap(UUID.init(uuidString:))
-        let previous = continuing ? conversations.first(where: { $0.id == previousID }) : nil
-        if continuing && previous == nil { throw SiriReplyError.noPreviousConversation }
+        let previous = try plan.previousConversation(conversations.first(where: { $0.id == previousID }),
+            mode: continuing ? .continuing : conversationMode, preferences: siriPreferences)
         let provider = activeProvider, model = selectedModelID
-        var options = preferences
-        if continuing { options.essayMode = previous?.isWriting ?? false }
-        let target = writing ? 800 : nil
-        let request = try SiriReplyRequest(question: question, provider: provider, model: model,
+        let plannedOptions = siriPreferences.requestOptions(app: preferences, thinking: deepThinking, plan: plan)
+        var options = plannedOptions.preferences
+        if let previous { options.essayMode = previous.isWriting }
+        if plan.webSearch == true && !canSearch { throw SiriReplyError.unsupportedSearch }
+        let target = plan.writing ? 800 : nil
+        let request = try SiriReplyRequest(question: plan.question, provider: provider, model: model,
             key: Credentials.read(provider: provider),
             searchKey: options.webSearch && provider.apiProtocol == .deepSeek ? Credentials.read(provider: .mimo) : "",
-            preferences: options, thinking: deepThinking, history: previous?.messages ?? [], essayTarget: target)
+            preferences: options, thinking: plannedOptions.thinking, history: previous?.messages ?? [], essayTarget: target)
         isAnsweringSiri = true
         defer { isAnsweringSiri = false }
         let reply = try await SiriReplyService(client: client).answer(request, progress: progress)
         try Task.checkCancellation()
-        var conversation = previous ?? Conversation(writingWorkspace: writing)
+        var conversation = previous ?? Conversation(writingWorkspace: plan.writing)
         conversation.messages.append(ChatMessage(role: .user, text: request.question))
         conversation.messages.append(ChatMessage(role: .assistant, text: reply.text, modelID: model,
             state: reply.state, notice: reply.notice, sources: reply.sources, providerName: provider.name,
-            isEssay: writing || (continuing && conversation.isWriting), essayTarget: target))
+            isEssay: plan.writing || (previous != nil && conversation.isWriting), essayTarget: target))
         conversation.updatedAt = .now
         if let index = conversations.firstIndex(where: { $0.id == conversation.id }) { conversations[index] = conversation }
         else { conversations.append(conversation) }
@@ -159,6 +169,8 @@ final class ChatStore: ObservableObject {
         deepThinking = UserDefaults.standard.bool(forKey: "deepThinking")
         preferences = UserDefaults.standard.data(forKey: "preferences.v1")
             .flatMap { try? JSONDecoder().decode(ChatPreferences.self, from: $0) } ?? .init()
+        siriPreferences = defaults.data(forKey: "siri.preferences.v1")
+            .flatMap { try? JSONDecoder().decode(SiriPreferences.self, from: $0) } ?? .init()
         let directory = URL.applicationSupportDirectory.appendingPathComponent("WristChat", isDirectory: true)
         historyURL = directory.appendingPathComponent("conversations.json")
         historyWriter = HistoryWriter(url: historyURL)

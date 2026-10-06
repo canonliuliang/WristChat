@@ -6,7 +6,7 @@ import SwiftUI
 private enum ChatSheet: String, Identifiable {
     case compose, models, history, settings
     #if DEBUG
-    case about
+    case about, siri
     #endif
     var id: String { rawValue }
 }
@@ -128,6 +128,7 @@ struct ChatView: View {
                 case .settings: NavigationStack { SettingsView() }
                 #if DEBUG
                 case .about: NavigationStack { AboutView() }
+                case .siri: NavigationStack { SiriSettingsView() }
                 #endif
                 }
             }

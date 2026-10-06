@@ -28,6 +28,7 @@ struct SettingsView: View {
             Section("使用偏好") {
                 NavigationLink("显示与触感") { DisplaySettingsView() }
                 NavigationLink("回答朗读") { SpeechSettingsView() }
+                NavigationLink("Siri 对话") { SiriSettingsView() }
                 NavigationLink("对话偏好") { ConversationSettingsView() }
             }
             Section("AI 服务") {

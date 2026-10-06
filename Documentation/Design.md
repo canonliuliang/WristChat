@@ -20,7 +20,11 @@ MiMo 搜索使用官方工具及服务端实际来源。DeepSeek 联网采用 Mi
 
 ## Siri 与小组件
 
-三个 LongRunningIntent 仅支持后台执行，返回完整 String 与 IntentDialog，不要求打开 App：提问、追问、写作文。Siri 历史单独保存，不选择为当前 App 对话，也不替换草稿、偏好或工作台。进度由实际流式事件更新。
+四个 LongRunningIntent 仅支持后台执行，返回完整 String 与 IntentDialog，不要求打开 App：自然对话、独立提问、显式追问、写作文。Siri 历史单独保存，不选择为当前 App 对话，也不替换草稿、偏好或工作台。进度由实际流式事件更新。
+
+自然对话采用原生 String 参数和 parameterSummary。非参数化 App Shortcut 短语提供回答、帮我、聊聊等变体；专用 AppShortcuts.xcstrings 生成简体中文与英文资源，经 appshortcutstringsprocessor 校验。Info.plist 配置 AI 别名。参数化快捷短语限于预定义实体/枚举值，不用任意文字实体伪造整句识别；口令路由、别名识别和自由问题的提取必须用真实 Siri 验证。
+
+SiriConversationPlan 在执行前统一验证问题，处理带分隔符的换话题、长度与联网要求，保留追问内容。自动上下文只采用最后已完成的 Siri 问答且时间在0–600秒内；失效、未来时间、未完成或关闭自动接续则新建。显式旧追问入口保持可接续较早历史。作文生成单独新建写作对话。SiriPreferences 独立持久化，默认简洁快答并关闭本次深度思考，也可适度解释或跟随聊天设置；语音覆盖只改变本次冻结选项，成功后才追加记录并原子保存。
 
 WidgetKit 表盘复杂功能和智能叠放仅提供快捷入口，不展示聊天正文、请求模型或保存密钥。使用稳定的 widget kind 与 URL 路由。
 

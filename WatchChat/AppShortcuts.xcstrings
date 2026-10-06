@@ -1,0 +1,159 @@
+{
+  "sourceLanguage": "zh-Hans",
+  "strings": {
+    "用${applicationName}回答": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用${applicationName}回答"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Answer with ${applicationName}"
+          }
+        }
+      }
+    },
+    "${applicationName}帮我": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${applicationName}帮我"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help me with ${applicationName}"
+          }
+        }
+      }
+    },
+    "和${applicationName}聊聊": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "和${applicationName}聊聊"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Talk to ${applicationName}"
+          }
+        }
+      }
+    },
+    "请${applicationName}回答": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请${applicationName}回答"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask ${applicationName} to answer"
+          }
+        }
+      }
+    },
+    "用${applicationName}提问": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用${applicationName}提问"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask a question with ${applicationName}"
+          }
+        }
+      }
+    },
+    "问${applicationName}": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "问${applicationName}"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ask ${applicationName}"
+          }
+        }
+      }
+    },
+    "继续问${applicationName}": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "继续问${applicationName}"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue asking ${applicationName}"
+          }
+        }
+      }
+    },
+    "用${applicationName}继续对话": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用${applicationName}继续对话"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue the conversation with ${applicationName}"
+          }
+        }
+      }
+    },
+    "用${applicationName}写作文": {
+      "comment": "Siri trigger. Keep the applicationName placeholder.",
+      "localizations": {
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用${applicationName}写作文"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write an essay with ${applicationName}"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
