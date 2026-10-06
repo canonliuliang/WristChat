@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = 1;
+	"classes" = {
+	};
+	"objectVersion" = 60;
+	"objects" = {
+		"E632687AB169159F4DD9B60A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/ChatStore.swift";
+			"sourceTree" = "<group>";
+		};
+		"915774D3A5EF16633E185ACD" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/AIProvider.swift";
+			"sourceTree" = "<group>";
+		};
+		"E086B6C492BDE0AC3AADAC51" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/ChatModels.swift";
+			"sourceTree" = "<group>";
+		};
+		"F83CBEF5FB7CC1181E84F9B2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/ChatPreferences.swift";
+			"sourceTree" = "<group>";
+		};
+		"6D129BA773B2D3C50869D452" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/EssayDocument.swift";
+			"sourceTree" = "<group>";
+		};
+		"E5A35D376B655CB80246E423" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/EssayDocumentCache.swift";
+			"sourceTree" = "<group>";
+		};
+		"0A35771C07D538CCD1AC6410" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/EssaySizing.swift";
+			"sourceTree" = "<group>";
+		};
+		"D9EBCD2A2D20D0D4C617CDE9" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/EssayWriting.swift";
+			"sourceTree" = "<group>";
+		};
+		"616F88BAA5273D86FC291700" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/HistoryWriter.swift";
+			"sourceTree" = "<group>";
+		};
+		"10A1F1F12CD3567226AA2AF2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/MiMoClient.swift";
+			"sourceTree" = "<group>";
+		};
+		"5C234A5AFBED363EDAF9AB14" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/ReplyDocument.swift";
+			"sourceTree" = "<group>";
+		};
+		"CDB56C59EFFF35DEDF1E687E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/SiriReplyService.swift";
+			"sourceTree" = "<group>";
+		};
+		"3757BCA90CFE835090C0B090" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/SpokenReply.swift";
+			"sourceTree" = "<group>";
+		};
+		"7A81CD0971E0B67A1B53ECA3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/StreamDecoder.swift";
+			"sourceTree" = "<group>";
+		};
+		"8F9C54D72E673297AD8D6042" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/WebGrounding.swift";
+			"sourceTree" = "<group>";
+		};
+		"F57E3ED495C6AA343A84A004" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Core/WristChatRoute.swift";
+			"sourceTree" = "<group>";
+		};
+		"DBF13337750AEAD7CB245D5A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Credentials.swift";
+			"sourceTree" = "<group>";
+		};
+		"B7CC96D789BB27EBFD99D6B4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/DebugAcceptance.swift";
+			"sourceTree" = "<group>";
+		};
+		"708318CD4BF4CE3747C9A5F3" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/ReplySpeaker.swift";
+			"sourceTree" = "<group>";
+		};
+		"C38A940326D194EE531B1C4C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/SigningValidity.swift";
+			"sourceTree" = "<group>";
+		};
+		"A7E80A21F06BC7C56F98A307" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/AboutView.swift";
+			"sourceTree" = "<group>";
+		};
+		"1F3B501560DF1DDD91B47060" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/AnswerLengthControl.swift";
+			"sourceTree" = "<group>";
+		};
+		"A9F0C4FA8CEA1D9E13FCB5FC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/ChatView.swift";
+			"sourceTree" = "<group>";
+		};
+		"AA16F01FCE225A001B1B2C5A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/ComposeView.swift";
+			"sourceTree" = "<group>";
+		};
+		"4D80E8C3F5E18BC8B8BE6CF2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/ConversationMenuView.swift";
+			"sourceTree" = "<group>";
+		};
+		"353E822F9F5E076741EE0B1E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/EssayWorkspaceView.swift";
+			"sourceTree" = "<group>";
+		};
+		"62FCD9535E384F1A5A867E5B" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/ModelsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"7DB04D4DCCD1A4D04E2F149A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/ProvidersView.swift";
+			"sourceTree" = "<group>";
+		};
+		"5510F6ACC47BBEBDAE8E1707" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/ReplyContentView.swift";
+			"sourceTree" = "<group>";
+		};
+		"30D1744C317AE476CF6E0B92" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/SettingsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"6EB8DB15DF6E7DF83D6CDB5C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/SourcesView.swift";
+			"sourceTree" = "<group>";
+		};
+		"D0C295F8997EF7E04A180250" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/SpeechSettingsView.swift";
+			"sourceTree" = "<group>";
+		};
+		"935E73294BFF62838A2199B8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/Views/WritingTargetControl.swift";
+			"sourceTree" = "<group>";
+		};
+		"28D13930C3DA7B267093D38F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/WristChatApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"971A250AE1B74D691587521D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "WatchChat/WristChatIntents.swift";
+			"sourceTree" = "<group>";
+		};
+		"357B5A111AB95B5B12A61830" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E632687AB169159F4DD9B60A";
+		};
+		"479075DBA5D3AD3BA5E4DB8E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "915774D3A5EF16633E185ACD";
+		};
+		"8513E997DA5C2232D1DCC4E5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E086B6C492BDE0AC3AADAC51";
+		};
+		"B8165684125A772D44237758" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F83CBEF5FB7CC1181E84F9B2";
+		};
+		"0907D014677B187461C79BE2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6D129BA773B2D3C50869D452";
+		};
+		"75B0FEF982B98DBC3348A72A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "E5A35D376B655CB80246E423";
+		};
+		"7037F7E655E10602BC4110A1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0A35771C07D538CCD1AC6410";
+		};
+		"5B8FFA342168BCDFBE3657D9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D9EBCD2A2D20D0D4C617CDE9";
+		};
+		"6FB536A7D71FA3CCA40A08B6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "616F88BAA5273D86FC291700";
+		};
+		"6D82ADC0083C19AC886CBCAE" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "10A1F1F12CD3567226AA2AF2";
+		};
+		"F100F3820E470E909BACAFDB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "5C234A5AFBED363EDAF9AB14";
+		};
+		"1C7DD7177B0A7344720124F5" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CDB56C59EFFF35DEDF1E687E";
+		};
+		"3477D257D401E11BB8AB8AC1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3757BCA90CFE835090C0B090";
+		};
+		"66F36496641D41FF149E1E76" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7A81CD0971E0B67A1B53ECA3";
+		};
+		"0E2998B28D8A62A4A4C5FC86" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8F9C54D72E673297AD8D6042";
+		};
+		"7C9E2941792D47349C0339F9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F57E3ED495C6AA343A84A004";
+		};
+		"D79223C8578A6291ABA49A31" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "DBF13337750AEAD7CB245D5A";
+		};
+		"BBD86AA165BED4360B8444A0" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B7CC96D789BB27EBFD99D6B4";
+		};
+		"EF7E8C596AC11815FC777EF3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "708318CD4BF4CE3747C9A5F3";
+		};
+		"2BF4572362F2BF9BAF7421B3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C38A940326D194EE531B1C4C";
+		};
+		"649023398D0E4639F67576C8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A7E80A21F06BC7C56F98A307";
+		};
+		"D4997FB0B2396512AC38131C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "1F3B501560DF1DDD91B47060";
+		};
+		"78023F3C58757E5073474271" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A9F0C4FA8CEA1D9E13FCB5FC";
+		};
+		"940E62AEBACD2A7CFDD7A64D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AA16F01FCE225A001B1B2C5A";
+		};
+		"7507D591D30C88A8BFE46F12" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "4D80E8C3F5E18BC8B8BE6CF2";
+		};
+		"4AACB577DF1F7ED7C297595D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "353E822F9F5E076741EE0B1E";
+		};
+		"7531973C4DDA140018F68432" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "62FCD9535E384F1A5A867E5B";
+		};
+		"E2C6F3FECE0A0B4672F57417" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "7DB04D4DCCD1A4D04E2F149A";
+		};
+		"D1FE9E7C74EEC15EF5DAC57D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "5510F6ACC47BBEBDAE8E1707";
+		};
+		"BF8DCA5ACBFDA87A7C65350C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "30D1744C317AE476CF6E0B92";
+		};
+		"CFAE3398B185E6381EE723F2" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6EB8DB15DF6E7DF83D6CDB5C";
+		};
+		"A0D0186EF6126A44DA374D86" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D0C295F8997EF7E04A180250";
+		};
+		"9D6474974373FC4EE338E326" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "935E73294BFF62838A2199B8";
+		};
+		"AB9D321A60B74837BBB3B967" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "28D13930C3DA7B267093D38F";
+		};
+		"00E5AB64DA25D8594B7DBD8D" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "971A250AE1B74D691587521D";
+		};
+		"C1ECED048FAAB4B4FB0B4669" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "folder.assetcatalog";
+			"path" = "WatchChat/Assets.xcassets";
+			"sourceTree" = "<group>";
+		};
+		"AC165FA1FB661F3D23B90C90" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = ".private/BootstrapCredentials.plist";
+			"sourceTree" = "<group>";
+		};
+		"BCB338BF6A2FB49A0486CA60" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text";
+			"path" = "LICENSE";
+			"sourceTree" = "<group>";
+		};
+		"6D87D1A12A55D38CE4D7DD26" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "WatchChat/PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"42B9CAC6F76BFE3D02051E3E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xcconfig";
+			"path" = ".private/Signing.xcconfig";
+			"sourceTree" = "<group>";
+		};
+		"DCAA2BBBE795CF3DD123CB0A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C1ECED048FAAB4B4FB0B4669";
+		};
+		"45AE3CB4126FC95344DFF64C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AC165FA1FB661F3D23B90C90";
+		};
+		"6A2FA6E835C8644EC52CCA80" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BCB338BF6A2FB49A0486CA60";
+		};
+		"4DBF1E5670199359FEB21F8A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6D87D1A12A55D38CE4D7DD26";
+		};
+		"6ACCB7F5F2ADC3F06164EE3A" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "wrapper.application";
+			"path" = "WristChat.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"458C76B0E27922CA8A7B4964" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "wrapper.app-extension";
+			"path" = "WristChatWidgetsExtension.appex";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"CED90FA869FEB482FD666CA6" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "wrapper.application";
+			"path" = "WristChatContainer.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"FBDC4F23F93125BBEEAE800C" = {
+			"isa" = "PBXGroup";
+			"children" = ("6ACCB7F5F2ADC3F06164EE3A", "458C76B0E27922CA8A7B4964", "CED90FA869FEB482FD666CA6");
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"48A9D4AD9A511AA28DE37439" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "WatchChat/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"BCE16DD0260827ECF338C787" = {
+			"isa" = "PBXGroup";
+			"children" = ("E632687AB169159F4DD9B60A", "915774D3A5EF16633E185ACD", "E086B6C492BDE0AC3AADAC51", "F83CBEF5FB7CC1181E84F9B2", "6D129BA773B2D3C50869D452", "E5A35D376B655CB80246E423", "0A35771C07D538CCD1AC6410", "D9EBCD2A2D20D0D4C617CDE9", "616F88BAA5273D86FC291700", "10A1F1F12CD3567226AA2AF2", "5C234A5AFBED363EDAF9AB14", "CDB56C59EFFF35DEDF1E687E", "3757BCA90CFE835090C0B090", "7A81CD0971E0B67A1B53ECA3", "8F9C54D72E673297AD8D6042", "F57E3ED495C6AA343A84A004", "DBF13337750AEAD7CB245D5A", "B7CC96D789BB27EBFD99D6B4", "708318CD4BF4CE3747C9A5F3", "C38A940326D194EE531B1C4C", "A7E80A21F06BC7C56F98A307", "1F3B501560DF1DDD91B47060", "A9F0C4FA8CEA1D9E13FCB5FC", "AA16F01FCE225A001B1B2C5A", "4D80E8C3F5E18BC8B8BE6CF2", "353E822F9F5E076741EE0B1E", "62FCD9535E384F1A5A867E5B", "7DB04D4DCCD1A4D04E2F149A", "5510F6ACC47BBEBDAE8E1707", "30D1744C317AE476CF6E0B92", "6EB8DB15DF6E7DF83D6CDB5C", "D0C295F8997EF7E04A180250", "935E73294BFF62838A2199B8", "28D13930C3DA7B267093D38F", "971A250AE1B74D691587521D", "C1ECED048FAAB4B4FB0B4669", "AC165FA1FB661F3D23B90C90", "BCB338BF6A2FB49A0486CA60", "6D87D1A12A55D38CE4D7DD26", "42B9CAC6F76BFE3D02051E3E", "48A9D4AD9A511AA28DE37439");
+			"name" = "WatchChat";
+			"sourceTree" = "<group>";
+		};
+		"2FE9A8361FA6EB54746238BF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "Widgets/WristChatWidgets.swift";
+			"sourceTree" = "<group>";
+		};
+		"7C00590ED4574C49F4854542" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "Widgets/Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"D05D537F53E8289EB1CE1F24" = {
+			"isa" = "PBXGroup";
+			"children" = ("2FE9A8361FA6EB54746238BF", "7C00590ED4574C49F4854542");
+			"name" = "Widgets";
+			"sourceTree" = "<group>";
+		};
+		"AA4ACA445B3FBAF47CDE31AC" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "net.daringfireball.markdown";
+			"path" = "README.md";
+			"sourceTree" = "<group>";
+		};
+		"A8C8B36AA0CE8CBC4DE267B2" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "net.daringfireball.markdown";
+			"path" = "Documentation/Design.md";
+			"sourceTree" = "<group>";
+		};
+		"71AB8B6AFB1BAE3DF247E028" = {
+			"isa" = "PBXGroup";
+			"children" = ("AA4ACA445B3FBAF47CDE31AC", "A8C8B36AA0CE8CBC4DE267B2");
+			"name" = "Documentation";
+			"sourceTree" = "<group>";
+		};
+		"B28B7AF69320201D1CF206EB" = {
+			"isa" = "PBXGroup";
+			"children" = ("BCE16DD0260827ECF338C787", "D05D537F53E8289EB1CE1F24", "71AB8B6AFB1BAE3DF247E028", "FBDC4F23F93125BBEEAE800C");
+			"sourceTree" = "<group>";
+		};
+		"8EEBAB68363C2B0DAE00DB30" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "6.0";
+				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"MARKETING_VERSION" = "1.7.1";
+				"CURRENT_PROJECT_VERSION" = "11";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEVELOPMENT_TEAM" = "$(WRISTCHAT_DEVELOPMENT_TEAM)";
+				"SDKROOT" = "watchos";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"WATCHOS_DEPLOYMENT_TARGET" = "27.0";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.liuliang.WristChat.watchkitapp.widgets";
+				"PRODUCT_NAME" = "WristChatWidgetsExtension";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "腕聊";
+				"INFOPLIST_FILE" = "Widgets/Info.plist";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME" = "AccentColor";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+			};
+			"name" = "Debug";
+		};
+		"9B3B545F8CBA1ACB550689D3" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "6.0";
+				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"MARKETING_VERSION" = "1.7.1";
+				"CURRENT_PROJECT_VERSION" = "11";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEVELOPMENT_TEAM" = "$(WRISTCHAT_DEVELOPMENT_TEAM)";
+				"SDKROOT" = "watchos";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"WATCHOS_DEPLOYMENT_TARGET" = "27.0";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.liuliang.WristChat.watchkitapp.widgets";
+				"PRODUCT_NAME" = "WristChatWidgetsExtension";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "腕聊";
+				"INFOPLIST_FILE" = "Widgets/Info.plist";
+				"APPLICATION_EXTENSION_API_ONLY" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME" = "AccentColor";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"VALIDATE_PRODUCT" = "YES";
+			};
+			"name" = "Release";
+		};
+		"9ED0E5B5BC01E6B082EFBF74" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("8EEBAB68363C2B0DAE00DB30", "9B3B545F8CBA1ACB550689D3");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"85F4AC52F5CB8B7089A2E81E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2FE9A8361FA6EB54746238BF";
+		};
+		"5E862392B31181A92CCA77CE" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F57E3ED495C6AA343A84A004";
+		};
+		"47B19A8765E551160CDBCCD9" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("85F4AC52F5CB8B7089A2E81E", "5E862392B31181A92CCA77CE");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"D79A8C44548D63C9078DB7F3" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"6E347E085BA4AE236AF14A25" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "C1ECED048FAAB4B4FB0B4669";
+		};
+		"C70144A126094429EB269AE3" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BCB338BF6A2FB49A0486CA60";
+		};
+		"52418ECFA8FDC3B253CAE7FB" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("6E347E085BA4AE236AF14A25", "C70144A126094429EB269AE3");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"ADEAF5E167D4943BE484764E" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "9ED0E5B5BC01E6B082EFBF74";
+			"buildPhases" = ("47B19A8765E551160CDBCCD9", "D79A8C44548D63C9078DB7F3", "52418ECFA8FDC3B253CAE7FB");
+			"buildRules" = ();
+			"dependencies" = ();
+			"name" = "WristChatWidgets";
+			"productName" = "WristChatWidgetsExtension";
+			"productReference" = "458C76B0E27922CA8A7B4964";
+			"productType" = "com.apple.product-type.app-extension";
+		};
+		"EE75F2064180905B610A7AAE" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "ADEAF5E167D4943BE484764E";
+			"remoteInfo" = "WristChatWidgets";
+		};
+		"72E518DB56FE0DD55F893E7D" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "ADEAF5E167D4943BE484764E";
+			"targetProxy" = "EE75F2064180905B610A7AAE";
+		};
+		"CF4B53CDB49381B08CA752A9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "458C76B0E27922CA8A7B4964";
+			"settings" = {
+				"ATTRIBUTES" = ("RemoveHeadersOnCopy");
+			};
+		};
+		"B855F593E7E53B3F417B1A82" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "6.0";
+				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"MARKETING_VERSION" = "1.7.1";
+				"CURRENT_PROJECT_VERSION" = "11";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEVELOPMENT_TEAM" = "$(WRISTCHAT_DEVELOPMENT_TEAM)";
+				"SDKROOT" = "watchos";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"WATCHOS_DEPLOYMENT_TARGET" = "27.0";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.liuliang.WristChat.watchkitapp";
+				"PRODUCT_NAME" = "WristChat";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "腕聊";
+				"INFOPLIST_FILE" = "WatchChat/Info.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "WatchChat/WristChat.entitlements";
+				"INFOPLIST_KEY_WKApplication" = "YES";
+				"INFOPLIST_KEY_WKWatchOnly" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"INFOPLIST_KEY_NSMicrophoneUsageDescription" = "使用系统听写输入聊天问题。";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME" = "AccentColor";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+				"ENABLE_PREVIEWS" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+			};
+			"name" = "Debug";
+		};
+		"9FB40F81649242ADD5A99310" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "6.0";
+				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"MARKETING_VERSION" = "1.7.1";
+				"CURRENT_PROJECT_VERSION" = "11";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEVELOPMENT_TEAM" = "$(WRISTCHAT_DEVELOPMENT_TEAM)";
+				"SDKROOT" = "watchos";
+				"SUPPORTED_PLATFORMS" = "watchos watchsimulator";
+				"WATCHOS_DEPLOYMENT_TARGET" = "27.0";
+				"TARGETED_DEVICE_FAMILY" = "4";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.liuliang.WristChat.watchkitapp";
+				"PRODUCT_NAME" = "WristChat";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "腕聊";
+				"INFOPLIST_FILE" = "WatchChat/Info.plist";
+				"CODE_SIGN_ENTITLEMENTS" = "WatchChat/WristChat.entitlements";
+				"INFOPLIST_KEY_WKApplication" = "YES";
+				"INFOPLIST_KEY_WKWatchOnly" = "YES";
+				"SKIP_INSTALL" = "YES";
+				"INFOPLIST_KEY_NSMicrophoneUsageDescription" = "使用系统听写输入聊天问题。";
+				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
+				"ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME" = "AccentColor";
+				"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks";
+				"ENABLE_PREVIEWS" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"VALIDATE_PRODUCT" = "YES";
+			};
+			"name" = "Release";
+		};
+		"C8172B64C9559963A405112B" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("B855F593E7E53B3F417B1A82", "9FB40F81649242ADD5A99310");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"F98F2CC45248EE41616BF801" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("357B5A111AB95B5B12A61830", "479075DBA5D3AD3BA5E4DB8E", "8513E997DA5C2232D1DCC4E5", "B8165684125A772D44237758", "0907D014677B187461C79BE2", "75B0FEF982B98DBC3348A72A", "7037F7E655E10602BC4110A1", "5B8FFA342168BCDFBE3657D9", "6FB536A7D71FA3CCA40A08B6", "6D82ADC0083C19AC886CBCAE", "F100F3820E470E909BACAFDB", "1C7DD7177B0A7344720124F5", "3477D257D401E11BB8AB8AC1", "66F36496641D41FF149E1E76", "0E2998B28D8A62A4A4C5FC86", "7C9E2941792D47349C0339F9", "D79223C8578A6291ABA49A31", "BBD86AA165BED4360B8444A0", "EF7E8C596AC11815FC777EF3", "2BF4572362F2BF9BAF7421B3", "649023398D0E4639F67576C8", "D4997FB0B2396512AC38131C", "78023F3C58757E5073474271", "940E62AEBACD2A7CFDD7A64D", "7507D591D30C88A8BFE46F12", "4AACB577DF1F7ED7C297595D", "7531973C4DDA140018F68432", "E2C6F3FECE0A0B4672F57417", "D1FE9E7C74EEC15EF5DAC57D", "BF8DCA5ACBFDA87A7C65350C", "CFAE3398B185E6381EE723F2", "A0D0186EF6126A44DA374D86", "9D6474974373FC4EE338E326", "AB9D321A60B74837BBB3B967", "00E5AB64DA25D8594B7DBD8D");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"966BC082AC27780BA4F95154" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"5DE9C4F03402171BEAA3D6C0" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("DCAA2BBBE795CF3DD123CB0A", "45AE3CB4126FC95344DFF64C", "6A2FA6E835C8644EC52CCA80", "4DBF1E5670199359FEB21F8A");
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"0805FCD4F97E72B0E1C185B4" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("CF4B53CDB49381B08CA752A9");
+			"runOnlyForDeploymentPostprocessing" = 0;
+			"dstPath" = "";
+			"dstSubfolderSpec" = 13;
+			"name" = "Embed App Extensions";
+		};
+		"CC5DFDCE979AD25E6E412BC0" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "C8172B64C9559963A405112B";
+			"buildPhases" = ("F98F2CC45248EE41616BF801", "966BC082AC27780BA4F95154", "5DE9C4F03402171BEAA3D6C0", "0805FCD4F97E72B0E1C185B4");
+			"buildRules" = ();
+			"dependencies" = ("72E518DB56FE0DD55F893E7D");
+			"name" = "WristChat";
+			"productName" = "WristChat";
+			"productReference" = "6ACCB7F5F2ADC3F06164EE3A";
+			"productType" = "com.apple.product-type.application";
+		};
+		"DFAEC1DAD95FE49AE6BD488E" = {
+			"isa" = "PBXContainerItemProxy";
+			"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+			"proxyType" = 1;
+			"remoteGlobalIDString" = "CC5DFDCE979AD25E6E412BC0";
+			"remoteInfo" = "WristChat";
+		};
+		"B02DCA58E9434E7539CDE925" = {
+			"isa" = "PBXTargetDependency";
+			"target" = "CC5DFDCE979AD25E6E412BC0";
+			"targetProxy" = "DFAEC1DAD95FE49AE6BD488E";
+		};
+		"6D6F3EA2FB175FF8A868E169" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6ACCB7F5F2ADC3F06164EE3A";
+			"settings" = {
+				"ATTRIBUTES" = ("RemoveHeadersOnCopy");
+			};
+		};
+		"CFFE73B380BCBA76BDA4436C" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "6.0";
+				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"MARKETING_VERSION" = "1.7.1";
+				"CURRENT_PROJECT_VERSION" = "11";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEVELOPMENT_TEAM" = "$(WRISTCHAT_DEVELOPMENT_TEAM)";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "27.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.liuliang.WristChat";
+				"PRODUCT_NAME" = "WristChatContainer";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "腕聊";
+				"SKIP_INSTALL" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+			};
+			"name" = "Debug";
+		};
+		"08020039EF42DB44AE991995" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_VERSION" = "6.0";
+				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"SWIFT_EMIT_LOC_STRINGS" = "YES";
+				"CODE_SIGN_STYLE" = "Automatic";
+				"GENERATE_INFOPLIST_FILE" = "YES";
+				"MARKETING_VERSION" = "1.7.1";
+				"CURRENT_PROJECT_VERSION" = "11";
+				"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+				"DEVELOPMENT_TEAM" = "$(WRISTCHAT_DEVELOPMENT_TEAM)";
+				"SDKROOT" = "iphoneos";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "27.0";
+				"TARGETED_DEVICE_FAMILY" = "1,2";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.liuliang.WristChat";
+				"PRODUCT_NAME" = "WristChatContainer";
+				"INFOPLIST_KEY_CFBundleDisplayName" = "腕聊";
+				"SKIP_INSTALL" = "NO";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"VALIDATE_PRODUCT" = "YES";
+			};
+			"name" = "Release";
+		};
+		"19B74F292A2989E077090C50" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("CFFE73B380BCBA76BDA4436C", "08020039EF42DB44AE991995");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"03A42D228953A9829FC27F49" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ();
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"52C8E75713C8BD3D34485436" = {
+			"isa" = "PBXCopyFilesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ("6D6F3EA2FB175FF8A868E169");
+			"runOnlyForDeploymentPostprocessing" = 0;
+			"dstPath" = "$(CONTENTS_FOLDER_PATH)/Watch";
+			"dstSubfolderSpec" = 16;
+			"name" = "Embed Watch Content";
+		};
+		"887C39C91684C755FCE90078" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = "19B74F292A2989E077090C50";
+			"buildPhases" = ("03A42D228953A9829FC27F49", "52C8E75713C8BD3D34485436");
+			"buildRules" = ();
+			"dependencies" = ("B02DCA58E9434E7539CDE925");
+			"name" = "WristChatContainer";
+			"productName" = "WristChatContainer";
+			"productReference" = "CED90FA869FEB482FD666CA6";
+			"productType" = "com.apple.product-type.application.watchapp2-container";
+		};
+		"89E1FD6268CC0F221A2BE178" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG $(inherited)";
+			};
+			"name" = "Debug";
+		};
+		"E6DE6C99132752C914FEF632" = {
+			"isa" = "XCBuildConfiguration";
+			"baseConfigurationReference" = "42B9CAC6F76BFE3D02051E3E";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"VALIDATE_PRODUCT" = "YES";
+			};
+			"name" = "Release";
+		};
+		"862894B703A6DEDF96A9DD6C" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ("89E1FD6268CC0F221A2BE178", "E6DE6C99132752C914FEF632");
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"98F54143AB4E86B28C3AFEE0" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"LastUpgradeCheck" = "2700";
+				"LastSwiftUpdateCheck" = "2700";
+				"BuildIndependentTargetsInParallel" = "YES";
+				"TargetAttributes" = {
+					"CC5DFDCE979AD25E6E412BC0" = {
+						"CreatedOnToolsVersion" = "27.0";
+					};
+					"887C39C91684C755FCE90078" = {
+						"CreatedOnToolsVersion" = "27.0";
+					};
+					"ADEAF5E167D4943BE484764E" = {
+						"CreatedOnToolsVersion" = "27.0";
+					};
+				};
+			};
+			"buildConfigurationList" = "862894B703A6DEDF96A9DD6C";
+			"compatibilityVersion" = "Xcode 15.0";
+			"developmentRegion" = "zh-Hans";
+			"hasScannedForEncodings" = 0;
+			"knownRegions" = ("zh-Hans", "en", "Base");
+			"mainGroup" = "B28B7AF69320201D1CF206EB";
+			"productRefGroup" = "FBDC4F23F93125BBEEAE800C";
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = ("887C39C91684C755FCE90078", "CC5DFDCE979AD25E6E412BC0", "ADEAF5E167D4943BE484764E");
+		};
+	};
+	"rootObject" = "98F54143AB4E86B28C3AFEE0";
+}
